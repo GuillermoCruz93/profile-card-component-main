@@ -1,0 +1,74 @@
+.etiqueta {
+    z-index: 1;
+    background-color: white;
+    width: 20.5rem;
+    height: 23.5rem;
+    border-radius: 15px;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    &__pattern {
+        grid-column: 1/4;
+        grid-row: 1/5;
+        height: 8.75rem;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-image: url(/images/bg-pattern-card.svg);
+        z-index: 0;
+    }
+
+    &__foto {
+        border-radius: 50px;
+        grid-column: 2/3;
+        grid-row: 4/7;
+        z-index: 1;
+
+        >img {
+            border: solid white 5px;
+            border-radius: 50px;
+        }
+    }
+
+    &__nombre {
+        grid-column: 1/4;
+        grid-row: 8/9;
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+
+        &__user{
+            align-self: flex-end;
+            margin-bottom: 0;
+            font-size: $fontName;
+            color: $veryDarkDesaturatedBlue;
+            font-weight: bold;
+        }
+        &__country{
+            color: $darkGrayishBlue;
+        }
+    }
+
+    &__stats {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 1/4;
+        grid-row: 10/13;
+        height: 5.5rem;
+        align-self: end;
+        border-top: solid .4px rgba(0, 0, 0, .2);
+        text-align: center;
+        line-height: 3px;
+
+    }
+
+    .number {
+        color: $veryDarkDesaturatedBlue;
+        font-size: $fontStats;
+        font-weight: bold;
+    }
+
+    .title{
+        font-size: .625rem;
+        color: $darkGrayishBlue;
+        letter-spacing: 0.3em
+    }
+
+}

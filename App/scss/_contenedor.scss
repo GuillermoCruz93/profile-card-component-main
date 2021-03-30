@@ -1,0 +1,17 @@
+.contenedor{
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    &__fondo-top{
+        position: fixed;
+        bottom: 50%;
+        right: 50%;
+    }
+
+    &__fondo-bottom{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    }
+}
